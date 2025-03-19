@@ -14,6 +14,7 @@ Open NO AUTH application and accept all permissions
   Open Test Application
   Accept android device permission
   Configure all time location
+  Enter login number and click continue
 
 *** Keywords ***
 Open Test Application
@@ -37,3 +38,8 @@ Configure all time location
   Click Element  id=com.android.permissioncontroller:id/allow_always_radio_button
   Click Element  class=android.widget.ImageButton
 
+Enter login number and click continue
+  Wait Until Element Is Visible    class=android.widget.EditText
+  Input Text  class=android.widget.EditText  7028597055
+  Click Element  	accessibility_id=CONTINUE
+  Click Element   id=com.android.permissioncontroller:id/permission_allow_button
