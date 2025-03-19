@@ -42,4 +42,6 @@ Enter login number and click continue
   Wait Until Element Is Visible    class=android.widget.EditText
   Input Text  class=android.widget.EditText  7028597055
   Click Element  	accessibility_id=CONTINUE
-  Click Element   id=com.android.permissioncontroller:id/permission_allow_button
+  Wait Until Element Is Visible    xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
+  Click Element   xpath=//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
+  
